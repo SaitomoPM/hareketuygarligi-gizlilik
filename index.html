@@ -31,15 +31,17 @@
 <p>Hareket Uygarlığı, adımlarını bir yerleşim kurma oyununa çeviren bir iOS uygulamasıdır.</p>
 
 <h2>Okunan veri</h2>
-<p>Uygulama, Apple Sağlık’tan yalnızca adım sayını okur. Sağlık’a hiçbir veri yazmaz.</p>
+<p>Uygulama, Apple Sağlık’tan yalnızca adım sayını okur. Sağlık uygulamasına elle eklediğin adımlar oyunda sayılmaz. Sağlık’a hiçbir veri yazmaz.</p>
 
 <h2>Verinin işlendiği yer</h2>
 <p>Adımların, saatlik hareketin ve oyun kaydın yalnızca telefonunda işlenir ve saklanır. Ekip seferine katılmazsan uygulama hiçbir sunucuya veri göndermez. Uygulama reklam ve analiz aracı kullanmaz.</p>
 
 <h2>Ekip seferi</h2>
-<p>Ekip seferi isteğe bağlıdır ve onay vermeden başlamaz. Onay verirsen uygulama senin için e-posta ya da ad istemeyen anonim bir hesap açar. Sefer puanı o günkü hareketinden hesaplandığı için bu bilgiler hareketinle ilgilidir.</p>
-<p>Sunucuya şunlar gönderilir: anonim hesap kimliğin, onay tarihin ve onay verdiğin metnin sürümü, hazır listeden seçtiğin takma ad ve ekip adı, ekip üyeliğin, günlük sefer puanın ve üç dilimin puanı, rota bonusun, seçtiğin rota, mola günlerin, karşılaşma sonuçların ve ödüllerin. Adım sayın, saatlik dökümün, oba adın ve oyun kaydın gönderilmez. Uygulama puanını arka planda da gönderebilir.</p>
-<p>Ekip arkadaşların takma adını, günlük puanını, üç dilimin puanını ve o gün molada olup olmadığını görür. Rakip ekip yalnızca ekibinin adını, zafer sayısını ve ekip skorunu görür.</p>
+<p>Ekip seferi isteğe bağlıdır ve onay vermeden başlamaz. Onay metni değişirse uygulama yeniden onay ister ve yeni onayı verene kadar sunucuya hiçbir şey göndermez. Sunucu da güncel onayı olmayan hesaptan veri kabul etmez. Onay verirsen uygulama senin için e-posta ya da ad istemeyen anonim bir hesap açar. Sefer puanı o günkü hareketinden hesaplandığı için bu bilgiler hareketinle ilgilidir.</p>
+<p>Sunucuya şunlar gönderilir: anonim hesap kimliğin, onay tarihin ve onay verdiğin metnin sürümü, hazır listeden seçtiğin takma ad ve ekip adı, ekip üyeliğin, günlük sefer puanın ve üç dilimin puanı, rota bonusun, seçtiğin rota, mola günlerin, karşılaşma sonuçların ve ödüllerin. Puan, rota ve mola kayıtlarının en son yazıldığı zaman da saklanır. Adım sayın, saatlik dökümün, oba adın ve oyun kaydın gönderilmez. Uygulama puanını arka planda da gönderebilir.</p>
+<p>Ekip kurduğunda ya da bir ekibe katıldığında son yedi günün sefer puanları da bir kerede gönderilir. Bu puanlar ekibe uygun rakip bulmak ve rakipsiz haftada ekibi kendi geçen haftasıyla karşılaştırmak için kullanılır.</p>
+<p>Yanlış davet kodu denediğinde deneme sınırı için hesap kimliğin ve deneme saati sunucuda kısa süre tutulur.</p>
+<p>Ekip arkadaşların takma adını, günlük sefer puanını, üç dilimin puanını, o gün molada olup olmadığını ve senden son verinin geldiği saati görür. Bu saat, puan kaydının en son yazıldığı zamandır. Adım sayını ve rotanı görmez. Rakip ekip yalnızca ekibinin adını, zafer sayısını ve ekip skorunu görür.</p>
 <p>Bu bilgiler veritabanı hizmeti sağlayıcısı Supabase üzerinde, Türkiye dışındaki sunucularda saklanır. Bağlantı sırasında IP adresin bu sağlayıcı tarafından işlenebilir. Bilgiler satılmaz ve reklam için kullanılmaz.</p>
 
 <h2>Yedekler</h2>
@@ -57,7 +59,9 @@
 <p>Uygulamayı TestFlight üzerinden kullanıyorsan Apple, çökme kayıtlarını ve kullanım bilgilerini toplayıp geliştiriciyle paylaşabilir. TestFlight’tan geri bildirim gönderirsen yazdığın not ve eklediğin ekran görüntüsü geliştiriciye ulaşır. Ekran görüntüsünde görünenler dışında bunların içinde adım verin bulunmaz.</p>
 
 <h2>Silme</h2>
-<p>Ekip seferindeki bilgilerinin silinmesini istersen aşağıdaki adrese ekibinin davet kodunu ve takma adını yaz. Ekipten ayrılınca yeni puan gönderilmez. Uygulamayı silmek sunucudaki bilgileri silmez.</p>
+<p>Ekip hesabını uygulamanın içinden silebilirsin: Günlük › dişli simgesi › Oyun ayarları › Ekip hesabını sil. Takma adın, ekip üyeliğin, sefer puanların, rotaların, mola günlerin, ödüllerin, davet denemelerin ve anonim hesabın sunucudan silinir. Ekibinin geçmiş karşılaşma sonuçları kalır. Bu sonuçlarda yalnız ekip skoru vardır, adın ya da kişisel puanın yoktur. Telefonundaki oyun kaydın silinmez.</p>
+<p>Uygulamaya ulaşamıyorsan aşağıdaki adrese ekibinin davet kodunu ve takma adını yazarak silinmesini isteyebilirsin.</p>
+<p>Ekipten ayrılmak hesabı silmez: yeni puan gönderilmez ama önceki kayıtların sunucuda kalır. Uygulamayı silmek de sunucudaki bilgileri silmez.</p>
 <p>Uygulamayı sildiğinde telefonundaki oyun kaydın da silinir. Daha önce alınmış yedeklerdeki kopya, yedeği silene kadar durur. Sağlık iznini istediğin zaman Ayarlar › Uygulamalar › Sağlık › Veri Erişimi ve Aygıtlar bölümünden kapatabilirsin (iOS 17’de Ayarlar › Sağlık › Veri Erişimi ve Aygıtlar).</p>
 
 <h2>Değişiklikler</h2>
@@ -75,15 +79,17 @@
 <p>Hareket Uygarlığı is an iOS app that turns your steps into a settlement-building game.</p>
 
 <h2>Data the app reads</h2>
-<p>The app reads only your step count from Apple Health. It does not write any data to Health.</p>
+<p>The app reads only your step count from Apple Health. Steps you add manually in the Health app do not count in the game. It does not write any data to Health.</p>
 
 <h2>Where your data is processed</h2>
 <p>Your steps, your hourly activity and your game save are processed and stored only on your phone. If you do not join a team expedition, the app sends no data to any server. The app does not use advertising or analytics tools.</p>
 
 <h2>Team expedition</h2>
-<p>The team expedition is optional and does not start without your consent. If you agree, the app creates an anonymous account for you that asks for no email address or name. Because the expedition score is calculated from your movement that day, this information relates to your movement.</p>
-<p>The following is sent to the server: your anonymous account ID, the date of your consent and the version of the text you consented to, the nickname and team name you pick from a preset list, your team membership, your daily expedition score and the points of the three time slots, route bonus, chosen route, rest days, match results and rewards. Your step count, hourly breakdown, camp name and game save are not sent. The app may also send your score in the background.</p>
-<p>Your teammates see your nickname, daily score, the points of your three time slots and whether you are resting that day. The opposing team sees only your team's name, number of wins and team score.</p>
+<p>The team expedition is optional and does not start without your consent. If the consent text changes, the app asks for your consent again and sends nothing to the server until you give it. The server also rejects data from an account without current consent. If you agree, the app creates an anonymous account for you that asks for no email address or name. Because the expedition score is calculated from your movement that day, this information relates to your movement.</p>
+<p>The following is sent to the server: your anonymous account ID, the date of your consent and the version of the text you consented to, the nickname and team name you pick from a preset list, your team membership, your daily expedition score and the points of the three time slots, route bonus, chosen route, rest days, match results and rewards. For score, route and rest records, the time each record was last written is also stored. Your step count, hourly breakdown, camp name and game save are not sent. The app may also send your score in the background.</p>
+<p>When you create or join a team, your expedition scores for the last seven days are also sent at once. These scores are used to find a suitable opponent for the team and, in a week without an opponent, to compare the team with its own previous week.</p>
+<p>If you enter a wrong invite code, your account ID and the time of the attempt are kept on the server for a short time to enforce the attempt limit.</p>
+<p>Your teammates see your nickname, daily expedition score, the points of your three time slots, whether you are resting that day and the time your latest data arrived. That time is when your score record was last written. They do not see your step count or your route. The opposing team sees only your team's name, number of wins and team score.</p>
 <p>This information is stored with the database provider Supabase on servers outside Türkiye. The provider may process your IP address during a connection. The information is not sold or used for advertising.</p>
 
 <h2>Backups</h2>
@@ -101,7 +107,9 @@
 <p>If you use the app through TestFlight, Apple may collect crash logs and usage information and share them with the developer. If you send feedback through TestFlight, your note and any screenshot you attach reach the developer. Apart from what is visible in a screenshot, these contain no step data.</p>
 
 <h2>Deletion</h2>
-<p>To have your team expedition information deleted, write to the address below with your team invite code and nickname. Once you leave a team, no new scores are sent. Deleting the app does not delete the information on the server.</p>
+<p>You can delete your team account inside the app: Günlük (Journal) › gear icon › Oyun ayarları (Game settings) › Ekip hesabını sil (Delete team account). Your nickname, team membership, expedition scores, routes, rest days, rewards, invite code attempts and anonymous account are deleted from the server. Your team's past match results remain. They contain only team scores, not your name or your personal scores. The game save on your phone is not deleted.</p>
+<p>If you cannot reach the app, write to the address below with your team invite code and nickname to ask for deletion.</p>
+<p>Leaving a team does not delete your account: no new scores are sent, but your earlier records stay on the server. Deleting the app does not delete the information on the server either.</p>
 <p>When you delete the app, your game save on the phone is deleted as well. A copy in an earlier backup remains until you delete that backup. You can turn off Health access at any time in Settings › Apps › Health › Data Access &amp; Devices (on iOS 17: Settings › Health › Data Access &amp; Devices).</p>
 
 <h2>Changes</h2>
